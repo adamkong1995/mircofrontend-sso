@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    {
+      "source": "/child-next/:path*",
+      "destination": "https://mircofrontend-child-next.vercel.app/child-next/:path*"
+    },
+    {
+      "source": "/child-nuxt/:path*",
+      "destination": "https://mircofrontend-child-nuxt.vercel.app/child-nuxt/:path*"
+    },
+
+    {
+      "source": "/:path*",
+      "destination": "https://mircofrontend-ssp.vercel.app/:path*"
+    }
+  ]
+}
