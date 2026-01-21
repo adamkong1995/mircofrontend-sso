@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         source: "/child-nuxt/:path*",
         destination: "http://localhost:3002/child-nuxt/:path*", // Proxy to Child Nuxt.js app
       },
+      {
+        source: "/child-nuxt",
+        destination: "http://localhost:3002/child-nuxt/", // Proxy to Child Nuxt.js app
+      },
     ];
   },
 };

@@ -1,7 +1,7 @@
 const navigationButtons = [
   { name: "Home", link: "/" },
   { name: "Child-Next", link: "/child-next" },
-  { name: "Child-Nuxt", link: "/child-nuxt" },
+  { name: "Child-Nuxt", link: "/child-nuxt/home" },
 ];
 
 const Navigation = () => {
