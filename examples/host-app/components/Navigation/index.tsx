@@ -7,7 +7,7 @@ const navigationButtons = [
 const Navigation = () => {
   return (
     <div className="h-16 px-4 py-2">
-      <div className="grid grid-cols-3 gap-4 flex items-center h-full">
+      <div className="grid grid-cols-3 gap-4 items-center h-full">
         <h2>Navigation Component</h2>
         <div className="flex justify-center gap-6">
           {navigationButtons.map((button) => (
