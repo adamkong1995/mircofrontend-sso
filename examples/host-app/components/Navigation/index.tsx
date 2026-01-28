@@ -5,7 +5,10 @@ import { auth0 } from "@/services/auth0/client";
 
 const navigationButtons = [
   { name: "Home", link: "/" },
-  { name: "Child-Next", link: "/child-next" },
+  {
+    name: "Child-Next",
+    link: "/child-next/auth/login",
+  },
   { name: "Child-Nuxt", link: "/child-nuxt/home" },
 ];
 
