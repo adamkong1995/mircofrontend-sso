@@ -4,8 +4,8 @@ import Profile from "../Profile";
 import { auth0 } from "@/services/auth0/client";
 
 const navigationButtons = [
-  { name: "Home", link: "/auth/login" },
-  { name: "Child-Next", link: "/child-next" },
+  { name: "Home", link: "/auth/login?returnTo=/home" },
+  { name: "Child-Next", link: "/child-next/home" },
   { name: "Child-Nuxt", link: "/child-nuxt/home" },
 ];
 

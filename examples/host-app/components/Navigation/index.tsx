@@ -4,10 +4,10 @@ import Profile from "../Profile";
 import { auth0 } from "@/services/auth0/client";
 
 const navigationButtons = [
-  { name: "Home", link: "/" },
+  { name: "Home", link: "/home" },
   {
     name: "Child-Next",
-    link: "/child-next/auth/login",
+    link: "/child-next/auth/login?returnTo=/home",
   },
   { name: "Child-Nuxt", link: "/child-nuxt/home" },
 ];

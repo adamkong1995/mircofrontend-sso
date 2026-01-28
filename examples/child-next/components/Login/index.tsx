@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function LoginButton() {
   return (
-    <Link href="/auth/login?returnTo=/child-next" className="button login">
+    <Link href="/auth/login?returnTo=/home" className="button login">
       Log In
     </Link>
   );
