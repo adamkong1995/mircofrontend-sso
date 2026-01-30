@@ -13,8 +13,8 @@
 
 <script setup lang="tsx">
 const navigationItems = [
-  { name: "Home", link: "/" },
-  { name: "Child-Next", link: "/child-next" },
+  { name: "Home", link: "/auth/login?returnTo=/home" },
+  { name: "Child-Next", link: "/child-next/auth/login?returnTo=/home" },
   { name: "Child-Nuxt", link: "/child-nuxt/home" },
 ];
 </script>

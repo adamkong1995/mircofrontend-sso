@@ -9,7 +9,7 @@ const navigationButtons = [
     name: "Child-Next",
     link: "/child-next/auth/login?returnTo=/home",
   },
-  { name: "Child-Nuxt", link: "/child-nuxt/home" },
+  { name: "Child-Nuxt", link: "/child-nuxt/auth/login" },
 ];
 
 const Navigation = async () => {
