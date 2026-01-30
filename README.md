@@ -120,3 +120,9 @@ The architecture is **vendor-agnostic** and transferable to Okta, Azure AD, Cogn
 
 This is a learning / portfolio project intended to demonstrate architectural patterns.  
 Security-sensitive code should be reviewed and hardened before production use.
+
+---
+
+## License
+
+MIT
