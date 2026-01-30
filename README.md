@@ -2,6 +2,8 @@
 
 > **Portfolio demo** showcasing how to implement **Single Sign-On (SSO)** and a **unified user experience** across multiple independently deployed applications — including modern and legacy-style apps — without shared cookies or shared runtime.
 
+This project is inspired by real-world work integrating authentication across new and legacy applications in a multi-team environment.
+
 ---
 
 ## What this demonstrates
@@ -27,6 +29,19 @@ Many real-world systems consist of:
 Users still expect **one login experience**.
 
 This repo demonstrates how to achieve that using **redirect-based SSO**, rather than fragile same-domain or shared-cookie assumptions.
+
+---
+
+## Constraints
+
+This demo intentionally assumes:
+
+- Applications are deployed independently
+- Applications live on different origins
+- No shared cookies or runtime are available
+- Some apps may be legacy or framework-limited
+
+These constraints drive the architecture choices shown here.
 
 ---
 
@@ -63,7 +78,8 @@ root/
 │ ├─ child-next/ # Child app (Next.js)
 │ ├─ child-nuxt/ # Child app (Nuxt)
 │ ├─ child-react/ # Child app (React / legacy-style)
-│ └─ proxy/ vercel.json # Production routing / rewrites
+│ └─ proxy/
+│    └─ vercel.json     # Production routing / rewrites
 ```
 
 Each application:
@@ -96,7 +112,7 @@ The architecture is **vendor-agnostic** and transferable to Okta, Azure AD, Cogn
 ## Key takeaway
 
 > **SSO and unified UX do not require a monolith.**  
-> Redirect-based authentication scales across frameworks, domains, and generations of applications.
+> Redirect-based authentication scales across frameworks, domains, and generations of applications without forcing rewrites.
 
 ---
 
