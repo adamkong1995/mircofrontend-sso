@@ -17,7 +17,7 @@ onMounted(async () => {
   const result = await auth0.handleRedirectCallback();
 
   // Optional: support returning to where the user originally wanted to go
-  const returnTo = (result?.appState as any)?.returnTo || "/child-nuxt/home";
+  const returnTo = (result?.appState as any)?.returnTo || "/home";
 
   await navigateTo(returnTo);
 });

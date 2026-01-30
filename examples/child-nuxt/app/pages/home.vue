@@ -10,7 +10,7 @@
     </div>
 
     <div v-else>
-      <button @click="login('/child-nuxt/home')">Login</button>
+      <button @click="login('/home')">Login</button>
     </div>
   </div>
 </template>
