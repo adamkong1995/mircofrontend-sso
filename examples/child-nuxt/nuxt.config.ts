@@ -9,6 +9,14 @@ export default defineNuxtConfig({
   },
   css: ["./app/assets/css/tailwind.css"],
   vite: { plugins: [tailwindcss()] },
+  runtimeConfig: {
+    public: {
+      auth0Domain: process.env.NUXT_PUBLIC_AUTH0_DOMAIN,
+      auth0ClientId: process.env.NUXT_PUBLIC_AUTH0_CLIENT_ID,
+      auth0RedirectUri: process.env.NUXT_PUBLIC_AUTH0_REDIRECT_URI,
+      auth0Audience: process.env.NUXT_PUBLIC_AUTH0_AUDIENCE,
+    },
+  },
   // tailwindcss: {
   //   cssPath: "~/assets/css/tailwind.css",
   //   configPath: "tailwind.config.js",
